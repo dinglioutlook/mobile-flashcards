@@ -1,7 +1,7 @@
 import {
     StyleSheet
   } from 'react-native'
-import { gray, white } from './colors'
+import { gray, white, green, red } from './colors'
 
 
 export const styles = StyleSheet.create({
@@ -60,5 +60,25 @@ export const styles = StyleSheet.create({
       showAreaH1:{
         fontSize: 26,
         alignItems: 'center'
-      }
+      },
+      redButton:{
+        paddingTop: 20,
+        paddingBottom: 20,
+        width: 200,
+        backgroundColor: red,
+        borderColor: gray,
+        borderWidth: 2,
+        borderRadius: 6,
+        marginTop: 10
+      },
+      greenButton:{
+        paddingTop: 20,
+        paddingBottom: 20,
+        width: 200,
+        backgroundColor: green,
+        borderColor: gray,
+        borderWidth: 2,
+        borderRadius: 6,
+        marginTop: 10
+      }      
   })

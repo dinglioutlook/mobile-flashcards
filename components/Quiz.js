@@ -38,7 +38,7 @@ export default class Quiz extends Component {
           }
         })
       } else {
-        clearLocalNotifications()
+        clearLocalNotification()
           .then(setLocalNotification)
       }
     }
@@ -129,19 +129,13 @@ export default class Quiz extends Component {
               </TouchableOpacity>
             </View>
             <TouchableOpacity
-              style={[
-                styles.button,
-                { backgroundColor: green }
-              ]}
+              style={styles.greenButton}
               onPress={() => this.gradeAnswer(1)}
             >
-              <Text style={[styles.buttonText]}>Correct</Text>
+              <Text style={styles.buttonText}>Correct</Text>
             </TouchableOpacity>
             <TouchableOpacity
-              style={[
-                 styles.button,
-                { backgroundColor: red }
-              ]}
+              style={styles.redButton}
               onPress={() => this.gradeAnswer(0)}
             >
               <Text style={styles.buttonText}>Incorrect</Text>

@@ -39,7 +39,7 @@ export function setLocalNotification() {
                 tomorrow.setMinutes(0)
   
                 Notifications.scheduleLocalNotificationAsync(
-                    createNotification(),
+                  createLocalNotification(),
                     {
                       time: tomorrow,
                       repeat: 'day',
