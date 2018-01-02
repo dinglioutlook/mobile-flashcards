@@ -43,7 +43,7 @@ export default class Deck extends Component {
           <Text style={styles.showArea}>
             What is the title of your new deck?
           </Text>
-          <View style={styles.showArea}>
+          <View>
             <TextInput
               onChangeText={(text) => this.setState({deckTitle: text })}
               value={this.state.deckTitle}
