@@ -29,8 +29,17 @@ export default class DeckList extends Component {
   }
 
   deckNumber = (title) => {
-    const count =  this.state.decks.filter((deck) => deck.title === title)[0].questions.length;
-    return `${count} card` 
+    const deck =  this.state.decks.filter((deck) => deck.title === title)[0];
+
+    if (deck)
+    {
+      const count = deck.questions.length
+      return `${count} card`
+    }
+    else{
+      //should not happen
+      return `no card`
+    } 
   }
 
   render() {
